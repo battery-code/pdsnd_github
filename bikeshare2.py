@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -24,7 +23,8 @@ def get_filters():
     while True:
         city = input("Choose a city by entering a letter.\nc for Chicago or n - New york or w - Washington:").lower()
         if city not in ("c","n","w"):
-            print("\nInvalid Entry!!")
+            print("\nInvalid Entry!")
+            print("-"*14)
         else:
             break
 
@@ -45,7 +45,8 @@ def get_filters():
     while True:
         month = input("Enter a digit from 0 to 6 corresponding to:\n0-include all months\n1-January\n2-February\n3-March\n4-April\n5-May\n6-June\n:")
         if month not in ("0","1","2","3","4","5","6"):
-            print("\nInvalid Entry!!")
+            print("\nInvalid Entry!")
+            print("-"*14)
         else:
             break
 
@@ -56,7 +57,8 @@ def get_filters():
     while True:
         day = input("Enter a digit from 0 to 7 corresponding to:\n0-include all days\n1-Monday\n2-Tuesday\n3-Wednesday\n4-Thursday\n5-Friday\n6-Saturday\n7-Sunday\n:")
         if day not in ("0","1","2","3","4","5","6","7"):
-            print("\nInvalid Entry!!")
+            print("\nInvalid Entry!")
+            print("-"*14)
         else:
             break
 
@@ -191,7 +193,8 @@ def raw_data(df):
     while True:
         data = input('Would you like to see the raw data? Enter y for yes and n for no.\n:').lower()
         if data not in ("y","n"):
-            print("\nInvalid Entry!!")
+            print("\nInvalid Entry!")
+            print("-"*14)
         else:
             break
     
@@ -203,7 +206,8 @@ def raw_data(df):
         while True:
             data = input('Would you like to see more raw data? Enter y for yes and n for no.\n:').lower()
             if data not in ("y","n"):
-                print("\nInvalid Entry!!")
+                print("\nInvalid Entry!")
+                print("-"*14)
             else:
                 break
 
@@ -238,7 +242,8 @@ def main():
         while True:
             restart = input('Would you like to restart? Enter y for yes or n for no.\n:')
             if restart not in ("y","n"):
-                print("\nInvalid Entry!!")
+                print("\nInvalid Entry!")
+                print("-"*14)
             else:
                 break
 
