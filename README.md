@@ -1,3 +1,6 @@
+### Hello World!
+This is my very first project in Python!<br/>
+
 ### Date created
 Sept, 21 2020
 
@@ -26,5 +29,5 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to the Udacity team!
 
