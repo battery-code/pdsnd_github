@@ -21,7 +21,7 @@ The python program computes various descriptive statistics on:
 
 The program is interactive in providing the user option to select a city, add filters for month and day of the week and finally, option to see the raw data.<br/>
 
-This project was done in the Udacity - Programming for Data Science Nanodegree program - Python Module
+This is the final project in the Udacity - Programming for Data Science Nanodegree program - Python Module.
 
 ### Files used
 chicago.csv  
