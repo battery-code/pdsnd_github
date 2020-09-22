@@ -1,8 +1,9 @@
 ### Date created
-Include the date you created this project and README file.
+Sept, 21 2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare usage in three cities: Chicago, New York and Washington 
+Udacity - Programming for Data Science - Python project
 
 ### Description
 Describe what your project is about and what it does
