@@ -147,7 +147,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nTrip Duration Statistics\n')
+    print('\nTrip Duration Statistics:\n')
     start_time = time.time()
 
     # display total travel time
@@ -163,7 +163,7 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nUser Statistics\n')
+    print('\nUser Statistics:\n')
     start_time = time.time()
 
     # Display counts of user types
@@ -177,9 +177,9 @@ def user_stats(df):
     # Display earliest, most recent, and most common year of birth only if the data is available
     ## It was pre-stated that year of birth data is not available for one city hence this check is added only here
     if df.get("Birth Year") is not None:
-        print("\nThe earliest year of birth of users is:",df["Birth Year"].min())
-        print("The latest year of birth of users is:",df["Birth Year"].max())
-        print("The most common year of birth of users is:",df["Birth Year"].mode()[0])
+        print("\nThe earliest year of birth of users is:",int(df["Birth Year"].min()))
+        print("The latest year of birth of users is:",int(df["Birth Year"].max()))
+        print("The most common year of birth of users is:",int(df["Birth Year"].mode()[0]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
